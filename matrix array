@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define MAXROW 10
+#define MAXCOL 10
+
+void main()
+{
+
+  int matrix[MAXROW][MAXCOL];
+  int i,j,r,c;
+  system("clear");
+  printf("\n Enter number of rows : ");
+  scanf("%d",&r);
+  printf("\n Enter Number of coloums : ");
+  scanf("%d",&c);
+  printf("\n Enter the matrix elements: \n ");
+  for(i=0;i<r;i++)
+  {
+  for(j=0;j<c;j++)
+  {
+printf("\n ENter element [%d][%d]   : ",i,j,j+1);
+scanf("%d",&matrix[i][j]);
+   }
+  }
+  printf("\n Matrix out is : \n ");
+  for(i=0;i<r;i++)
+  {
+  for(j=0;j<c;j++)
+  {
+  printf("%d\t",matrix[i][j]);
